@@ -1,0 +1,68 @@
+html {
+  font-family: "Rock Salt", cursive;
+  background: linear-gradient(
+    -45deg,
+    #f37236,
+    #379bf8,
+    #91e6da,
+    hsl(283, 84%, 64%)
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+/* learned from https://www.w3schools.com/cssref/css3_pr_animation-keyframes.php */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  background: white;
+  width: 900px;
+  margin: 0px auto;
+  padding: 20px 50px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+td {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+td > p {
+  font-size: 15px;
+  text-shadow: 2px 2px 5px rgb(0, 140, 255);
+}
+
+img {
+  width: 200px;
+  border-radius: 50% 50% 50% 50% / 100% 100% 0% 0%;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+img:hover {
+  opacity: 0.7;
+  border: 2px solid rgb(14, 99, 209);
+  transition: opacity 0.5s;
+}
+
+#header {
+  border: 2px solid rgb(14, 99, 209);
+  margin-bottom: 30px;
+  background: rgb(120, 165, 233);
+  padding: 30px;
+}
